@@ -1,4 +1,4 @@
-/* === Global Styles === */
+/* Base Styles */
 body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   margin: 0;
@@ -20,12 +20,19 @@ a {
   color: #1a73e8;
   text-decoration: none;
 }
+a:hover { text-decoration: underline; }
 
-a:hover {
-  text-decoration: underline;
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
 }
 
-/* === Hero Section === */
+.container.narrow {
+  max-width: 800px;
+}
+
+/* Hero Section */
 .hero {
   height: 100vh;
   background: url('images/hero_surf.jpg') center/cover no-repeat;
@@ -35,8 +42,7 @@ a:hover {
   align-items: center;
   color: #fff;
   text-align: center;
-  padding: 0 2rem;
-  text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
 }
 
 .hero h1 {
@@ -49,39 +55,60 @@ a:hover {
   margin-top: 0.5rem;
 }
 
-/* === About Section === */
-.about {
+/* Intro Section */
+.intro {
+  background: #f8f8f8;
+  text-align: center;
   padding: 5rem 2rem;
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: left;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1a73e8;
+}
+
+/* About Section */
+.about {
+  background: #fff;
 }
 
 .about h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
-  position: relative;
 }
 
-.about h2::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: #1a73e8;
-  margin: 1rem auto;
-  border-radius: 2px;
-}
-
-.about-text p {
+.about p {
   font-size: 1.1rem;
-  margin-bottom: 1.5rem;
 }
 
-/* === Portfolio Section === */
+/* Surf Feature Section */
+.surf-feature {
+  background: url('images/surf_feature.jpg') center/cover no-repeat;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+.surf-feature .overlay {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 6rem 2rem;
+}
+
+.surf-feature h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.surf-feature p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Portfolio Section */
 .portfolio {
-  padding: 5rem 2rem;
   background: #f7f7f7;
   text-align: center;
 }
@@ -89,10 +116,6 @@ a:hover {
 .portfolio h2 {
   font-size: 2rem;
   margin-bottom: 3rem;
-}
-
-.portfolio-category {
-  margin-bottom: 4rem;
 }
 
 .gallery {
@@ -112,10 +135,11 @@ a:hover {
   transform: scale(1.05);
 }
 
-/* === Contact Section === */
+/* Contact Section */
 .contact {
-  padding: 4rem 2rem;
+  background: #fff;
   text-align: center;
+  padding: 4rem 2rem;
 }
 
 .contact h2 {
@@ -123,7 +147,7 @@ a:hover {
   margin-bottom: 1rem;
 }
 
-/* === Footer === */
+/* Footer */
 footer {
   background: #f0f0f0;
   padding: 2rem;
@@ -131,65 +155,22 @@ footer {
   font-size: 0.9rem;
 }
 
-/* === Responsive: Mobile & Small Tablets === */
+/* Responsive */
 @media (max-width: 768px) {
-  /* Hero */
-  .hero {
-    padding: 0 1.5rem;
-    height: 90vh;
-  }
-
   .hero h1 {
-    font-size: 2.4rem;
-    line-height: 1.2;
+    font-size: 2.5rem;
   }
-
   .hero p {
     font-size: 1.1rem;
-    margin-top: 0.8rem;
   }
-
-  /* About */
-  .about {
+  .container {
     padding: 3rem 1.2rem;
-    text-align: center; /* center-align on mobile for better balance */
   }
-
-  .about h2 {
-    font-size: 1.8rem;
+  .surf-feature .overlay {
+    padding: 4rem 1.5rem;
   }
-
-  .about-text p {
-    font-size: 1rem;
-    margin-bottom: 1.2rem;
-  }
-
-  /* Portfolio */
-  .portfolio {
-    padding: 3rem 1rem;
-  }
-
-  .portfolio h2 {
-    font-size: 1.8rem;
-  }
-
   .gallery img {
-    width: 100%;
+    width: 90%;
     max-width: 380px;
-  }
-
-  /* Contact */
-  .contact {
-    padding: 3rem 1rem;
-  }
-
-  .contact h2 {
-    font-size: 1.8rem;
-  }
-
-  /* Footer */
-  footer {
-    font-size: 0.85rem;
-    padding: 1.5rem 1rem;
   }
 }
