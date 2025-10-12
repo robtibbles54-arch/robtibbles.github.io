@@ -1,4 +1,4 @@
-/* Global Styles */
+/* === Global Styles === */
 body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   margin: 0;
@@ -25,7 +25,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Hero Section */
+/* === Hero Section === */
 .hero {
   height: 100vh;
   background: url('images/hero_surf.jpg') center/cover no-repeat;
@@ -49,7 +49,7 @@ a:hover {
   margin-top: 0.5rem;
 }
 
-/* About Section */
+/* === About Section === */
 .about {
   padding: 5rem 2rem;
   max-width: 900px;
@@ -79,7 +79,7 @@ a:hover {
   margin-bottom: 1.5rem;
 }
 
-/* Portfolio Section */
+/* === Portfolio Section === */
 .portfolio {
   padding: 5rem 2rem;
   background: #f7f7f7;
@@ -112,7 +112,7 @@ a:hover {
   transform: scale(1.05);
 }
 
-/* Contact Section */
+/* === Contact Section === */
 .contact {
   padding: 4rem 2rem;
   text-align: center;
@@ -123,7 +123,7 @@ a:hover {
   margin-bottom: 1rem;
 }
 
-/* Footer */
+/* === Footer === */
 footer {
   background: #f0f0f0;
   padding: 2rem;
@@ -131,18 +131,65 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Responsive */
+/* === Responsive: Mobile & Small Tablets === */
 @media (max-width: 768px) {
+  /* Hero */
+  .hero {
+    padding: 0 1.5rem;
+    height: 90vh;
+  }
+
   .hero h1 {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
+    line-height: 1.2;
   }
+
   .hero p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    margin-top: 0.8rem;
   }
-  .gallery img {
-    width: 90%;
-  }
+
+  /* About */
   .about {
-    padding: 3rem 1.5rem;
+    padding: 3rem 1.2rem;
+    text-align: center; /* center-align on mobile for better balance */
+  }
+
+  .about h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+  }
+
+  /* Portfolio */
+  .portfolio {
+    padding: 3rem 1rem;
+  }
+
+  .portfolio h2 {
+    font-size: 1.8rem;
+  }
+
+  .gallery img {
+    width: 100%;
+    max-width: 380px;
+  }
+
+  /* Contact */
+  .contact {
+    padding: 3rem 1rem;
+  }
+
+  .contact h2 {
+    font-size: 1.8rem;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.85rem;
+    padding: 1.5rem 1rem;
   }
 }
