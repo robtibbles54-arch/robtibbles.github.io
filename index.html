@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Rob Tibbles Photography</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <h1>Rob Tibbles</h1>
+    <p>Capturing the power of the ocean — surf photography & high-impact press coverage</p>
+  </header>
+
+  <section class="about">
+    <p>Rob Tibbles is renowned for his surf photography and high-impact press and event coverage across North Devon and beyond.</p>
+  </section>
+
+  <section class="portfolio">
+    <h2>Portfolio</h2>
+    <h3>Surf Photography</h3>
+    <div class="gallery">
+      <img src="images/surf1.jpg" alt="Surf photo">
+      <img src="images/surf2.jpg" alt="Surf photo">
+    </div>
+
+    <h3>Press & Event Photography</h3>
+    <div class="gallery">
+      <img src="images/event1.jpg" alt="Event photo">
+      <img src="images/event2.jpg" alt="Event photo">
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:rob@example.com">rob@example.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/robtibbles" target="_blank">@robtibbles</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Rob Tibbles</p>
+  </footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
