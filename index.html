@@ -1,48 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rob Tibbles Photography</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Rob Tibbles — surf photography, journalism, and event media. Almost a quarter of a century capturing surf culture, press stories, and community life across North Devon and beyond.">
 </head>
 <body>
+
+  <!-- Hero Section -->
   <header class="hero">
     <h1>Rob Tibbles</h1>
-    <p>Capturing the power of the ocean — surf photography & high-impact press coverage</p>
+    <p>Surf Photography, Journalism & Event Media</p>
   </header>
 
+  <!-- About Section -->
   <section class="about">
-    <p>Rob Tibbles is renowned for his surf photography and high-impact press and event coverage across North Devon and beyond.</p>
+    <h2>About Rob</h2>
+    <div class="about-text">
+      <p>Rob Tibbles is an established photographer and journalist with almost a quarter of a century’s experience documenting surf culture, community life, and events across North Devon and beyond.</p>
+
+      <p>Best known for his powerful surf photography and reportage, Rob’s work fuses artistry with the instinct of a photojournalist — producing compelling images that have featured in both national and international publications.</p>
+
+      <p>Over the years, Rob has played an active role in the surf community through media, mentoring, and activism — championing environmental awareness, sustainable coastal living, and the spirit of British surf culture.</p>
+
+      <p>Alongside his editorial and press photography, Rob also manages media teams and provides event photography that blends professionalism with creative storytelling.</p>
+    </div>
   </section>
 
+  <!-- Portfolio Section -->
   <section class="portfolio">
     <h2>Portfolio</h2>
-    <h3>Surf Photography</h3>
-    <div class="gallery">
-      <img src="images/surf1.jpg" alt="Surf photo">
-      <img src="images/surf2.jpg" alt="Surf photo">
+
+    <div class="portfolio-category">
+      <h3>Surf Photography</h3>
+      <div class="gallery">
+        <img src="images/surf1.jpg" alt="Surf photography by Rob Tibbles">
+        <img src="images/surf2.jpg" alt="Surf photography by Rob Tibbles">
+      </div>
     </div>
 
-    <h3>Press & Event Photography</h3>
-    <div class="gallery">
-      <img src="images/event1.jpg" alt="Event photo">
-      <img src="images/event2.jpg" alt="Event photo">
+    <div class="portfolio-category">
+      <h3>Press & Event Photography</h3>
+      <div class="gallery">
+        <img src="images/event1.jpg" alt="Event photography by Rob Tibbles">
+        <img src="images/event2.jpg" alt="Press photography by Rob Tibbles">
+      </div>
     </div>
   </section>
 
+  <!-- Contact Section -->
   <section class="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:info@robtibbles.com">info@robtibbles.com</a></p>
+    <p>Email: <a href="mailto:rob@example.com">rob@example.com</a></p>
     <p>Instagram: <a href="https://instagram.com/robtibbles" target="_blank">@robtibbles</a></p>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; <span id="year"></span> Rob Tibbles</p>
+    <p>&copy; <span id="year"></span> Rob Tibbles Photography</p>
   </footer>
 
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
