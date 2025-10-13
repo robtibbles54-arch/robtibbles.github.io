@@ -1,96 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rob Tibbles — surf photography, journalism and press photography across North Devon and beyond. Capturing surf, community, and culture for over two decades.">
   <title>Rob Tibbles Photography</title>
-  <link rel="stylesheet" href="style.css" />
-  <meta name="description" content="Rob Tibbles — surf photography, journalism, and event media. Almost a quarter of a century capturing surf culture, press stories, and community life across North Devon and beyond.">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Hero Section -->
-  <header class="hero">
-    <h1>Rob Tibbles</h1>
-    <p>Surf Photography, Journalism & Event Media</p>
-  </header>
+  <!-- === Navigation Bar === -->
+  <nav>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#surf-feature">Surf</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <!-- Intro Section -->
-  <section class="intro section">
-    <div class="container">
-      <h2>Visual Storytelling with Depth and Authenticity</h2>
-      <p>For almost a quarter of a century, Rob Tibbles has captured the beauty, power, and culture of the ocean — alongside the energy of community stories, news, and events across North Devon and beyond.</p>
-    </div>
+  <!-- === Hero Section === -->
+  <section id="hero" class="hero fade-in fade-delay-1">
+    <h1>Rob Tibbles Photography</h1>
+    <p>Surf, Press, and Event Photography — Visual storytelling from North Devon and beyond.</p>
   </section>
 
-  <!-- About Section -->
-  <<section class="about section">
-    <div class="container narrow">
-      <h2>About Rob</h2>
-      <p>Rob Tibbles is an established photographer and journalist with almost a quarter of a century’s experience documenting surf culture, community life, and events across North Devon and beyond.</p>
-      <p>Best known for his powerful surf photography and reportage, Rob’s work fuses artistry with the instinct of a photojournalist — producing compelling images that have featured in both national and international publications.</p>
-      <p>Over the years, Rob has played an active role in the surf community through media, mentoring, and activism — championing environmental awareness, sustainable coastal living, and the spirit of British surf culture.</p>
-      <p>Alongside his editorial and press photography, Rob also manages media teams and provides event photography that blends professionalism with creative storytelling.</p>
-    </div>
+  <!-- === About Section === -->
+  <section id="about" class="about fade-in fade-delay-2">
+    <h2>About Rob</h2>
+    <p>Rob Tibbles is an established photographer and journalist with almost a quarter of a century’s experience documenting surf culture, community life, and events across North Devon and beyond.</p>
+    <p>Best known for his powerful surf photography and reportage, Rob’s work fuses artistry with the instinct of a photojournalist — producing compelling images that have featured in both national and international publications.</p>
+    <p>Over the years, Rob has played an active role in the surf community through media, mentoring, and activism — championing environmental awareness, sustainable coastal living, and the spirit of British surf culture.</p>
+    <p>Alongside his editorial and press photography, Rob also manages media teams and provides event photography that blends professionalism with creative storytelling.</p>
   </section>
 
-  <!-- Surf Photography Feature Section -->
-  <section class="surf-feature">
+  <!-- === Surf Feature Section === -->
+  <section id="surf-feature" class="surf-feature fade-in fade-delay-3">
     <div class="overlay">
       <h2>Surf Photography</h2>
-      <p>Capturing the raw energy and beauty of the Atlantic — from towering winter swells to the grace of North Devon’s surf community.</p>
+      <p>Capturing the energy, movement, and emotion of surf culture — from the wild coasts of North Devon to the international stage. Rob’s surf imagery celebrates the connection between people and the ocean through authentic visual storytelling.</p>
     </div>
   </section>
 
-  <!-- Portfolio Section -->
-  <section class="portfolio section">
-    <div class="container">
-      <h2>Portfolio</h2>
+  <!-- === Portfolio Section === -->
+  <section id="portfolio" class="portfolio fade-in fade-delay-2">
+    <h2>Portfolio</h2>
 
-      <div class="portfolio-category">
-        <h3>Surf Photography</h3>
-        <div class="gallery">
-          <img src="images/surf1.jpg" alt="Surf photography by Rob Tibbles">
-          <img src="images/surf2.jpg" alt="Surf photography by Rob Tibbles">
-        </div>
+    <div class="portfolio-category">
+      <h3>Surf & Ocean</h3>
+      <div class="gallery">
+        <img src="images/surf1.jpg" alt="Surfing North Devon">
+        <img src="images/surf2.jpg" alt="Wave Photography">
+        <img src="images/surf3.jpg" alt="Surf Event">
       </div>
+    </div>
 
-      <div class="portfolio-category">
-        <h3>Press & Event Photography</h3>
-        <div class="gallery">
-          <img src="images/event1.jpg" alt="Event photography by Rob Tibbles">
-          <img src="images/event2.jpg" alt="Press photography by Rob Tibbles">
-        </div>
+    <div class="portfolio-category">
+      <h3>Press & Events</h3>
+      <div class="gallery">
+        <img src="images/event1.jpg" alt="Press Photography">
+        <img src="images/event2.jpg" alt="Event Coverage">
+        <img src="images/event3.jpg" alt="Sports Photography">
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="contact section">
+  <!-- === Contact Section === -->
+  <section id="contact" class="contact fade-in fade-delay-1">
     <h2>Contact</h2>
+    <p>For assignments, commissions, or collaboration enquiries:</p>
     <p>Email: <a href="mailto:info@robtibbles.com">info@robtibbles.com</a></p>
-    <p>Instagram: <a href="https://instagram.com/robtibbles" target="_blank">@robtibbles</a></p>
+    <p>Follow on Instagram: <a href="https://www.instagram.com/" target="_blank">@robtibblesphoto</a></p>
   </section>
 
-  <!-- Footer -->
+  <!-- === Footer === -->
   <footer>
-    <p>&copy; <span id="year"></span> Rob Tibbles Photography</p>
+    <p>&copy; <span id="year"></span> Rob Tibbles Photography. All rights reserved.</p>
   </footer>
 
+  <!-- Simple JS for auto year -->
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-
-  <script>
-  // Reveal sections as they scroll into view
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) entry.target.classList.add('visible');
-    });
-  }, { threshold: 0.1 });
-
-  document.querySelectorAll('.section').forEach(sec => observer.observe(sec));
-</script>
 
 </body>
 </html>
