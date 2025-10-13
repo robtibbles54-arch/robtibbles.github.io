@@ -276,3 +276,40 @@ footer {
     font-size: 1.6rem;
   }
 }
+
+/* === Transitions & Scroll Animations === */
+
+/* Smooth section fade-in */
+.section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* When visible */
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Smooth scrolling between anchors */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Image hover glow */
+.gallery img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+/* Button hover transition (if added later) */
+button, a.button {
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+button:hover, a.button:hover {
+  transform: translateY(-3px);
+}
