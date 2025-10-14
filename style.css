@@ -81,22 +81,18 @@ section:nth-child(even) {
 /* === Hero Section === */
 .hero {
   background-image: url("images/hero_surf.jpg");
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
   text-align: center;
+  color: white;
   padding: 2rem;
-  position: relative;
-  background-color: #111; /* fallback */
 }
-
 
 /* === Section Headings === */
 section h2 {
