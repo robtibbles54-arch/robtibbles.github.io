@@ -38,43 +38,26 @@ a:hover {
   color: #005fa3;
 }
 
-/* === Navigation Bar === */
+/* === Navigation Bar (Hidden) === */
 nav {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  display: flex;
-  justify-content: center;
-  padding: 1rem 0.5rem;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.8rem;
-}
-
-nav a {
-  font-size: 1rem;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
-
-nav a:hover {
-  color: #1a73e8;
+  display: none; /* 👈 hides the navigation menu for now */
 }
 
 /* === Sections === */
 section {
-  padding: 3rem 2rem;
+  padding: 4rem 2rem;
   text-align: center;
+}
+
+@media (min-width: 1200px) {
+  section {
+    padding: 6rem 4rem;
+  }
 }
 
 /* === Hero Section === */
 .hero {
+  position: relative;
   background-image: url("images/hero_surf.jpg");
   background-position: center;
   background-size: cover;
@@ -87,13 +70,43 @@ section {
   color: white;
   text-align: center;
   padding: 2rem;
+  overflow: hidden;
+}
+
+/* Overlay for readability */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 0;
+}
+
+.hero h1,
+.hero p {
+  position: relative;
+  z-index: 1;
+  padding: 0 1rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  max-width: 700px;
+  text-shadow: 0 2px 3px rgba(0,0,0,0.4);
 }
 
 /* === Section Headings === */
 section h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: #0d47a1;
+  color: #0c2d6b;
 }
 
 /* === About Section === */
@@ -182,43 +195,4 @@ footer {
   color: #555;
 }
 
-/* === Responsive Design === */
-@media (max-width: 768px) {
-  section {
-    padding: 4rem 1.5rem;
-  }
-
-  .hero h1 {
-    font-size: 2.6rem;
-  }
-
-  .hero p {
-    font-size: 1.1rem;
-  }
-
-  .about, .surf-feature p {
-    text-align: center;
-  }
-
-  .gallery img {
-    width: 100%;
-    max-width: 340px;
-  }
-
-  nav ul {
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero h1 {
-    font-size: 2.1rem;
-  }
-  .hero p {
-    font-size: 1rem;
-  }
-  section h2 {
-    font-size: 1.6rem;
-  }
-}
+/* === Responsive De*
