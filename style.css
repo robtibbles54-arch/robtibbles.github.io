@@ -73,9 +73,6 @@ section {
   text-align: center;
 }
 
-section:nth-child(even) {
-  background: #f8f9fa;
-}
 
 /* === Hero Section === */
 .hero {
@@ -88,6 +85,7 @@ section:nth-child(even) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
   text-align: center;
   padding: 2rem;
 }
