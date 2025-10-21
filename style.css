@@ -233,3 +233,15 @@ footer {
     font-size: 1.6rem;
   }
 }
+
+/* === Scroll Fade Animation === */
+.fade-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
