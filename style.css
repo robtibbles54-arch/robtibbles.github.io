@@ -57,7 +57,7 @@ section {
 }
 
 /* === Hero Section === */
-.hero {
+#hero {
   position: relative;
   background-image: url("images/hero_surf.jpg");
   background-position: center;
@@ -124,7 +124,7 @@ section h2 {
 }
 
 /* === Surf Feature Section === */
-.surf-feature {
+#surf-feature {
   background: url("images/surf_feature.jpg") center/cover no-repeat;
   color: #fff;
   position: relative;
@@ -148,7 +148,7 @@ section h2 {
 }
 
 /* === Portfolio Section === */
-.portfolio {
+#portfolio {
   text-align: center;
 }
 
@@ -174,7 +174,7 @@ section h2 {
 }
 
 /* === Contact Section === */
-.contact {
+#contact {
   background: #ffffff;
   text-align: center;
 }
